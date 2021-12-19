@@ -1,13 +1,17 @@
 /**
- * See https://github.com/csstools/sanitize.css and 
- https://www.npmtrends.com/sanitize.css-vs-reset-css-vs-normalize.css 
- for more about sanitize.css
+ * sanitize.css is a CSS library that provides consistent, cross-browser default styling of HTML elements alongside useful defaults.
+
+ * sanitize.css is developed alongside normalize.css, which means every normalization is included, and every normalization and opinion are clearly marked and documented.
+
+ * sanitize.css wraps styles in zero-specificity selectors using :where().
+
+ * sanitize.css and normalize.css correct browser bugs while carefully testing and documenting changes. 
+ 
+ * sanitize.css styles adhere to common developer expectations and preferences, normalize.css styles adhere to css specifications. 
  */
 
-/* --------------------- sanitize.css / sanitize.css ---------------------- */
-
 /* Document
- * ======================================================================== */
+ * ========================================================================== */
 
 /**
  * Add border box sizing in all browsers (opinionated).
@@ -52,7 +56,7 @@ html {
 }
 
 /* Sections
- * ======================================================================== */
+ * ========================================================================== */
 
 /**
  * Remove the margin in all browsers (opinionated).
@@ -73,7 +77,7 @@ h1 {
 }
 
 /* Grouping content
- * ======================================================================== */
+ * ========================================================================== */
 
 /**
  * Remove the margin on nested lists in Chrome, Edge, IE, and Safari.
@@ -99,15 +103,13 @@ ul ul {
 }
 
 /**
- * 1. Correct the inheritance of border color in Firefox.
- * 2. Add the correct box sizing in Firefox.
- * 3. Show the overflow in Edge 18- and IE.
+ * 1. Add the correct sizing in Firefox.
+ * 2. Show the overflow in Edge 18- and IE.
  */
 
 hr {
-  color: inherit; /* 1 */
-  height: 0; /* 2 */
-  overflow: visible; /* 3 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -129,28 +131,17 @@ nav ul {
 }
 
 /**
- * Prevent VoiceOver from ignoring list semantics in Safari (opinionated).
- */
-
-nav li::before {
-  content: '\200B';
-}
-
-/**
  * 1. Correct the inheritance and scaling of font size in all browsers.
  * 2. Correct the odd `em` font sizing in all browsers.
- * 3. Prevent overflow of the container in all browsers (opinionated).
  */
 
 pre {
   font-family: monospace, monospace; /* 1 */
   font-size: 1em; /* 2 */
-  overflow: auto; /* 3 */
-  -ms-overflow-style: scrollbar; /* 3 */
 }
 
 /* Text-level semantics
- * ======================================================================== */
+ * ========================================================================== */
 
 /**
  * Remove the gray background on active links in IE 10.
@@ -199,7 +190,7 @@ small {
 }
 
 /* Embedded content
- * ======================================================================== */
+ * ========================================================================== */
 
 /*
  * Change the alignment on media elements in all browsers (opinionated).
@@ -265,22 +256,18 @@ svg:not(:root) {
 }
 
 /* Tabular data
- * ======================================================================== */
+ * ========================================================================== */
 
 /**
- * 1. Collapse border spacing in all browsers (opinionated).
- * 2. Correct table border color inheritance in all Chrome, Edge, and Safari.
- * 3. Remove text indentation from table contents in Chrome, Edge, and Safari.
+ * Collapse border spacing in all browsers (opinionated).
  */
 
 table {
-  border-collapse: collapse; /* 1 */
-  border-color: inherit; /* 2 */
-  text-indent: 0; /* 3 */
+  border-collapse: collapse;
 }
 
 /* Forms
- * ======================================================================== */
+ * ========================================================================== */
 
 /**
  * Remove the margin on controls in Safari.
@@ -307,9 +294,9 @@ button {
  */
 
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
 
@@ -371,15 +358,14 @@ textarea {
   margin: 0; /* 1 */
   overflow: auto; /* 2 */
   resize: vertical; /* 3 */
-  resize: block; /* 3 */
 }
 
 /**
  * Remove the padding in IE 10-.
  */
 
-[type='checkbox'],
-[type='radio'] {
+[type="checkbox"],
+[type="radio"] {
   padding: 0;
 }
 
@@ -388,7 +374,7 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 
-[type='search'] {
+[type="search"] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
@@ -455,7 +441,7 @@ textarea {
 }
 
 /* Interactive
- * ======================================================================== */
+ * ========================================================================== */
 
 /*
  * Add the correct display in Edge 18- and IE.
@@ -500,7 +486,7 @@ summary {
 }
 
 /* Scripting
- * ======================================================================== */
+ * ========================================================================== */
 
 /**
  * Add the correct display in IE 9-.
@@ -519,10 +505,12 @@ template {
 }
 
 /* User interaction
- * ======================================================================== */
+ * ========================================================================== */
 
 /*
- * Remove the tapping delay in IE 10.
+ * 1. Remove the tapping delay in IE 10.
+ * 2. Remove the tapping delay on clickable elements
+      in all browsers (opinionated).
  */
 
 a,
@@ -534,7 +522,8 @@ select,
 summary,
 textarea,
 [tabindex] {
-  -ms-touch-action: manipulation;
+  -ms-touch-action: manipulation; /* 1 */
+  touch-action: manipulation; /* 2 */
 }
 
 /**
@@ -546,13 +535,13 @@ textarea,
 }
 
 /* Accessibility
- * ======================================================================== */
+ * ========================================================================== */
 
 /**
  * Change the cursor on busy elements in all browsers (opinionated).
  */
 
-[aria-busy='true'] {
+[aria-busy="true"] {
   cursor: progress;
 }
 
@@ -569,7 +558,7 @@ textarea,
  * inoperable elements in all browsers (opinionated).
  */
 
-[aria-disabled='true'],
+[aria-disabled="true"],
 [disabled] {
   cursor: not-allowed;
 }
@@ -579,36 +568,39 @@ textarea,
  * in all browsers (opinionated).
  */
 
-[aria-hidden='false'][hidden] {
+[aria-hidden="false"][hidden] {
   display: initial;
 }
 
-[aria-hidden='false'][hidden]:not(:focus) {
+[aria-hidden="false"][hidden]:not(:focus) {
   clip: rect(0, 0, 0, 0);
   position: absolute;
 }
 
-/* ----------------------- sanitize.css / forms.css ----------------------- */
+/* Forms
+ * ========================================================================== */
 
 /**
- * 1. Change the inconsistent appearance in all browsers (opinionated).
- * 2. Add typography inheritance in all browsers (opinionated).
+ * Form controls appear visually consistent and restyle consistently (opinionated).
  */
 
-button,
-input,
-select,
-textarea {
-  background-color: transparent; /* 1 */
-  border: 1px solid WindowFrame; /* 1 */
-  color: inherit; /* 1 */
-  font: inherit; /* 2 */
-  letter-spacing: inherit; /* 2 */
-  padding: 0.25em 0.375em; /* 1 */
+button, input, select, textarea {
+  background-color: transparent;
+  border: 1px solid WindowFrame;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+  padding: 0.25em 0.375em;
+}
+
+[type="color"],
+[type="range"] {
+  border-width: 0;
+  padding: 0;
 }
 
 /**
- * Change the inconsistent appearance in all browsers (opinionated).
+ * Expandable select controls appear visually consistent (opinionated).
  */
 
 select {
@@ -619,44 +611,27 @@ select {
   padding-right: 1em;
 }
 
-/**
- * Change the inconsistent appearance in all browsers (opinionated).
- */
-
 select:not([multiple]):not([size]) {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='4'%3E%3Cpath d='M4 0h6L7 4'/%3E%3C/svg%3E");
 }
-
-/**
- * Remove the border and padding in all browsers (opinionated).
- */
-
-[type='color'],
-[type='range'] {
-  border-width: 0;
-  padding: 0;
-}
-
-/**
- * Change the inconsistent appearance in IE (opinionated).
- */
 
 ::-ms-expand {
   display: none;
 }
 
 /**
- * Correct the inconsistent appearance in IE (opinionated).
+ * Placeholders appear visually consistent in Internet Explorer (opinionated).
  */
 
 :-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.54);
 }
 
-/* ---------------------- sanitize.css / assets.css ---------------------- */
+/* Assets
+ * ========================================================================== */
 
 /**
- * Restrict sizing to the page width in all browsers (opinionated).
+ * Assets use a comfortable measure in all browsers (opinionated).
  */
 
 iframe,
@@ -668,57 +643,62 @@ textarea {
   max-width: 100%;
 }
 
-/* -------------------- sanitize.css / typography.css -------------------- */
+/* Typography
+ * ========================================================================== */
 
 /**
- * Use the default user interface font in all browsers (opinionated).
+ * Typography uses the default system font (opinionated).
  */
 
 html {
-  font-family: system-ui, /* macOS 10.11-10.12 */ -apple-system,
-    /* Windows 6+ */ 'Segoe UI', /* Android 4+ */ 'Roboto',
-    /* Ubuntu 10.10+ */ 'Ubuntu', /* Gnome 3+ */ 'Cantarell',
-    /* KDE Plasma 5+ */ 'Noto Sans', /* fallback */ sans-serif,
-    /* macOS emoji */ 'Apple Color Emoji', /* Windows emoji */ 'Segoe UI Emoji',
-    /* Windows emoji */ 'Segoe UI Symbol', /* Linux emoji */ 'Noto Color Emoji';
+  font-family:
+    system-ui,
+    /* macOS 10.11-10.12 */ -apple-system,
+    /* Windows 6+ */ Segoe UI,
+    /* Android 4+ */ Roboto,
+    /* Ubuntu 10.10+ */ Ubuntu,
+    /* Gnome 3+ */ Cantarell,
+    /* KDE Plasma 5+ */ Noto Sans,
+    /* fallback */ sans-serif,
+    /* macOS emoji */ "Apple Color Emoji",
+    /* Windows emoji */ "Segoe UI Emoji",
+    /* Windows emoji */ "Segoe UI Symbol",
+    /* Linux emoji */ "Noto Color Emoji";
 }
 
 /**
- * Use the default monospace user interface font in all browsers (opinionated).
+ * Pre-formatted and code-formatted text uses the monospace system font (opinionated).
  */
 
-code,
-kbd,
-samp,
-pre {
+code, kbd, pre, samp {
   font-family:
-    /* macOS 10.10+ */ 'Menlo', /* Windows 6+ */ 'Consolas',
-    /* Android 4+ */ 'Roboto Mono', /* Ubuntu 10.10+ */ 'Ubuntu Monospace',
-    /* KDE Plasma 5+ */ 'Noto Mono', /* KDE Plasma 4+ */ 'Oxygen Mono',
-    /* Linux/OpenOffice fallback */ 'Liberation Mono', /* fallback */ monospace,
-    /* macOS emoji */ 'Apple Color Emoji', /* Windows emoji */ 'Segoe UI Emoji',
-    /* Windows emoji */ 'Segoe UI Symbol', /* Linux emoji */ 'Noto Color Emoji';
+    /* macOS 10.10+ */ Menlo,
+    /* Windows 6+ */ Consolas,
+    /* Android 4+ */ Roboto Mono,
+    /* Ubuntu 10.10+ */ Ubuntu Monospace,
+    /* KDE Plasma 5+ */ Noto Mono,
+    /* KDE Plasma 4+ */ Oxygen Mono,
+    /* Linux/OpenOffice fallback */ Liberation Mono,
+    /* fallback */ monospace;
 }
 
-/* ------------------- sanitize.css / reduce-motion.css ------------------- */
+/* Reduce Motion
+ * ========================================================================== */
 
 /*
-* 1. Remove animations when motion is reduced (opinionated).
-* 2. Remove fixed background attachments when motion is reduced (opinionated).
-* 3. Remove timed scrolling behaviors when motion is reduced (opinionated).
-* 4. Remove transitions when motion is reduced (opinionated).
-*/
+ * Animations, scrolling effects, and transitions are reduced in all browsers (opinionated).
+ */
 
 @media (prefers-reduced-motion: reduce) {
   *,
   ::before,
   ::after {
-    animation-delay: -1ms !important; /* 1 */
-    animation-duration: 1ms !important; /* 1 */
-    animation-iteration-count: 1 !important; /* 1 */
-    background-attachment: initial !important; /* 2 */
-    scroll-behavior: auto !important; /* 3 */
-    transition-delay: 0s !important; /* 4 */
-    transition-duration: 0s !important; /* 4 */
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-delay: 0s !important;
+    transition-duration: 0s !important;
   }
 }
