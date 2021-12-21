@@ -1,18 +1,378 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+@font-face {
+  font-family: "cocogoose";
+  src: url("fonts/cocogoose-webfont.woff");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "cocogoose";
+  src: url("fonts/cocogoose-Italic.ttf");
+  font-style: italic;
+}
+
 /*
   ========================================
-  1
+  General
+  ========================================
+*/
+
+
+body {
+  font-family: "lato", sans-serif;
+}
+
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+/* header {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+} */
+
+.nav {
+  /* padding: 1.999em 1.999rem; */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-top: 0.5rem;
+  background-color: rgba(0, 0, 0, 0);
+  /* padding-top: 0.5rem; */
+
+  /* transition: padding 200ms ease-in-out, background-color 200ms ease-in-out; */
+}
+
+.nav__btn {
+  margin-top: 0.5rem;
+  /* padding-top: 0.5rem; */
+  margin-bottom: 0.5rem;
+  margin-left: 5%; /* Use % for experimentation... */
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  /* 992px */
+  .nav__ul,
+  .nav-top,
+  .nav-bottom__container {
+    display: none;
+  }
+}
+
+
+
+/*
+  ========================================
+  Hero
+  ========================================
+*/
+
+.hero--img {
+  display: flex;
+  z-index: -2;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 90vh;
+  padding: 6rem 0.25rem;
+  background: url('../img/sean-pollock-PhYq704ffdA-unsplash.jpeg') 50% 40%
+    no-repeat;
+  background-size: cover;
+
+  /* background-color: #fff;
+  background-image: url('img/sean-pollock-PhYq704ffdA-unsplash.jpeg');
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.test {
+  z-index: -2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  background: linear-gradient(-10deg, white 45%, rgba(255, 255, 255, 0.5));
+  content: '';
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 550px;
+  margin: 0 5%;
+  /* justify-content: center; */
+}
+
+.hero__h4 {
+  margin-top: 2rem;
+  margin-bottom: 0;
+
+  color: #ee523c;
+  font-weight: normal;
+  /* color: #3c83ee;  */
+}
+
+.hero__h1 {
+  margin-top: 0.25rem;
+  margin-bottom: 1.5rem;
+
+  /* color: #3c83ee; */
+  color: rgb(238, 82, 60);
+  line-height: 2rem;
+}
+
+.hero_description {
+  padding: 0.75rem;
+  border: 2px solid white !important;
+  font-size: small;
+
+  /* z-index: -2; */
+}
+
+.hero__date {
+  margin: 0;
+  font-size: larger;
+  font-weight: bolder;
+}
+
+.hero__location {
+  margin: 0;
+  font-size: medium;
+}
+
+/* Hero media for desktop */
+
+@media screen and (min-width: 768px) {
+
+}
+
+/*
+  ========================================
+  Main Program
+  ========================================
+*/
+
+.program__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  /* margin-top: 4rem; */
+  background-color: #25282f;
+  color: white;
+}
+
+.program__h2 {
+  margin-top: 2rem;
+}
+
+.program__decoration {
+  /* padding: 0;
+  margin: 0; */
+  width: 2.5rem;
+  height: 0.2rem;
+
+  margin-bottom: 2rem;
+  /* background: #3c83ee; */
+  background: #ee523c;
+  /* flex: 0 0 0.2rem; */
+}
+
+.program__cards {
+  margin-top: 0rem;
+  margin-bottom: 0.75rem;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* padding: 5%; */
+  /* flex: 1; */
+  padding: 0;
+  /* width: 50%; */
+}
+
+.program__item {
+  display: flex;
+  /* justify-content: space-between; */
+  /* justify-content: center; */
+  align-items: center;
+  max-width: 550px;
+  margin: 0 2.5%;
+  background-color: #3b3e45;
+  list-style: none;
+}
+
+.program__icon {
+  /* margin-left: 1.25rem; */
+  /* padding-left: 1.25rem; */
+}
+
+.program__img {
+  height: 37px;
+  margin-left: 1rem;
+  /* margin-right: 1.5rem; */
+}
+
+.program__h4 {
+  flex: 1;
+  min-width: 29%;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  color: #ee523c;
+  /* margin: 0 1.25rem; */
+  font-size: 0.95rem;
+}
+
+.program__h4--1 {
+  margin-left: 1.5rem;
+}
+
+.program__p {
+  max-width: 50%;
+  margin-right: 1rem;
+  font-size: small;
+  /* flex: 2; */
+}
+
+.program__btn {
+  margin-top: 1rem;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  padding: 1.5rem 3rem;
+  border: none;
+  /* background-color: #3c83ee;    */
+  background-color: #ee523c;
+  cursor: pointer;
+}
+
+/*
+  ========================================
+  Feature Speakers
+  ========================================
+*/
+
+.speakers__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.speakers__decoration {
+  width: 2.5rem;
+  height: 0.2rem;
+  margin-bottom: 2rem;
+  /* background: #3c83ee; */
+  background: #ee523c;
+}
+
+.speakers__btn {
+  margin-bottom: 2.5rem;
+  padding: 0.75rem 7rem;
+  cursor: pointer;
+}
+
+.speakers__icon {
+  margin-left: 0.5rem;
+}
+
+/*
+  ========================================
+  Partners
+  ========================================
+*/
+
+.partners__container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  background-color: #3b3e45;
+}
+
+.partners__h2 {
+  color: white;
+  /* align-self: center; */
+}
+
+.partners__decoration {
+  width: 2.5rem;
+  height: 0.2rem;
+  margin-bottom: 2rem;
+  /* background: #3c83ee; */
+  background: #ee523c;
+}
+
+.partners__logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: baseline; */
+  /* gap: 1rem; */
+  margin-bottom: 3rem;
+  gap: 1.5rem;
+}
+
+.partners__img {
+  max-height: 2rem;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+  margin-bottom: 0;
+  margin-left: 1rem;
+}
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem 5rem;
+  gap: 2rem;
+}
+
+.footer__img {
+  height: 30px;
+}
+
+.footer__p {
+  font-size: small;
+}
+
+/* 
+  ########################################
+  About page
+  ######################################## 
+*/
+
+/*
+  ========================================
+  Navigation
   ========================================
 */
 
 /*
   ========================================
-  2
+  Navigation
   ========================================
 */
 
 /*
   ========================================
-  3
+  Navigation
   ========================================
 */
-
