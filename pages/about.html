@@ -8,8 +8,8 @@
     <meta name="description" content="" />
 
     <!-- Links -->
-    <link href="css/index.css" rel="stylesheet" type="text/css" />
-    <link href="css/sanitize.css" rel="stylesheet" type="text/css" />
+    <link href="../css/about.css" rel="stylesheet" type="text/css" />
+    <link href="../css/sanitize.css" rel="stylesheet" type="text/css" />
 
     <!-- Tittle -->
     <title>Capstone Project</title>
@@ -25,144 +25,118 @@
   </head>
   <body>
     <header>
+
       <!-- Navigation Mobile -->
+
       <nav class="nav">
         <button class="nav__btn" type="button">
           <i class="nav__burger-icon fas fa-bars"></i>
         </button>
         <ul class="nav__ul">
-          <li class="nav__li"><a class="nav__a" href="">Portfolio</a></li>
-          <li class="nav__li"><a class="nav__a" href="">About</a></li>
-          <li class="nav__li"><a class="nav__a" href="">Contact</a></li>
+          <li class="nav__li"><a class="nav__a" href=""></a></li>
+          <li class="nav__li"><a class="nav__a" href=""></a></li>
+          <li class="nav__li"><a class="nav__a" href=""></a></li>
         </ul>
+      </nav>
+
+      <!-- Navigation desktop -->
+
+      <nav class="nav-top">
+        <ul class="nav-top__ul">
+          <li><a class="nav-top__a" href=""><i class="fab fa-facebook-f"></i></a></li>
+          <li><a class="nav-top__a" href=""><i class="fab fa-twitter"></i></a></li>
+          <li><a class="nav-top__a" href="">English</a></li>
+          <li><a class="nav-top__a" href="">My Page</a></li>
+          <li><a class="nav-top__a" href="">Logout</a></li>
+        </ul>
+      </nav>
+      <nav class="nav-bottom">
+       <div class="nav-bottom__container">
+          <a href="/"><img class="nav-bottom__logo" src="../img/fintech-logo-1.svg" alt=""></a>
+        <ul class="nav-bottom__ul">
+          <li><a class="nav-bottom__a" href="">About</a></li>
+          <li><a class="nav-bottom__a" href="">Program</a></li>
+          <li><a class="nav-bottom__a" href="">Join</a></li>
+          <li><a class="nav-bottom__a" href="">Sponsor</a></li>
+          <li><a class="nav-bottom__a" href="">News</a></li>
+          <li><button class="nav-bottom__btn" href="">Campaign</button></li>
+        </ul>
+       </div>
       </nav>
     </header>
 
     <main>
+
       <!-- Hero -->
-      <section class="hero hero--img hero--test">
-        <div class="hero__container">
-          <div class="test"></div>
-          <hgroup class="hero__hgroup">
-            <h3 class="hero__h4">"Hello! FinTech world"</h3>
+
+      <section class="hero-about hero-about--img">
+        <div class="hero-about__container">
+          <div class="hero-about__container-img"></div>
+          <hgroup class="hero-about__hgroup">
+            <h3 class="hero-about__h3">"Hello! FinTech world"</h3>
             <h1 class="hero__h1">
               <strong
                 >FINTECH<br />
-                GLOBAL SUMMIT<br />
+                GLOBAL SUMMIT
                 2022</strong
               >
             </h1>
           </hgroup>
-          <p class="hero_deccription">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
-            asperiores illo fugiat enim tempora quisquam quidem.
+          <p class="hero_about-description">
+            The FinTech Summit brings together the influential, disruptive and innovative technology companies that are redefining financial services across all areas of fintech. We’ll also be covering the major trends in the industry, especially FinTech-Bank Collaboration, the power of Open Banking, DeFi, the arrival of Crypto into the Mainstream, as well as Embedded Finance.
           </p>
-          <p class="hero__date"><strong>2022.10.15(THU) ~ 18(SUN)</strong></p>
-          <p class="hero__location">@ Lorem sit ipsum dolor sit amet elit.</p>
+          <p class="hero-about__info">Please contact us per Email for any further question about FinTech Global Summit 2022</p>
+          <p class="hero-about__email">fintechglobal@us.com<span class="hero__fa-chevron-right fas fa-chevron-right"></span></p>
         </div>
       </section>
 
-      <!-- Main Program -->
+      <!-- Logo Info -->
 
-      <!-- <section class="program">
-        <div class="program__container">
-          <h4 class="program__h2">Main Program</h4>
-          <span class="program__decoration"></span>
-
-          <ul class="program__cards">
-            <li class="program__item">
-              <i class="program__icon fas fa-chalkboard-teacher"></i>
-              <h4 class="program__h4">Lecture</h4>
-              <p class="program__p">
-                Lorem ipsum dolor amet consectetur adipisicing elit saepe quam
-                optio.
-              </p>
-            </li>
-          </ul>
-
-          <ul class="program__cards">
-            <li class="program__item">
-              <i class="program__icon fas fa-tv"></i>
-              <h4 class="program__h4">
-                Exihibitions
-              </h4>
-              <p class="program__p">
-                Lorem ipsum dolor amet consectetur adipisicing elit saepe quam
-                optio.
-              </p>
-            </li>
-          </ul>
-
-          <ul class="program__cards">
-            <li class="program__item">
-              <i class="program__icon far fa-comments"></i>
-              <h4 class="program__h4">Forum</h4>
-              <p class="program__p">
-                Lorem ipsum dolor amet consectetur adipisicing elit saepe quam
-                optio.
-              </p>
-            </li>
-          </ul>
-
-          <ul class="program__cards">
-            <li class="program__item">
-              <i class="program__icon far fa-edit"></i>
-              <h4 class="program__h4">Workshop</h4>
-              <p class="program__p">
-                Lorem ipsum dolor amet consectetur adipisicing elit saepe quam
-                optio.
-              </p>
-            </li>
-          </ul>
-
-          <ul class="program__cards">
-            <li class="program__item">
-              <i class="program__icon fas fa-circle-notch"></i>
-              <h4 class="program__h4">Ignite</h4>
-              <p class="program__p">
-                Lorem ipsum dolor amet consectetur adipisicing elit saepe quam
-                optio.
-              </p>
-            </li>
-          </ul>
-          <button class="program__btn">Join FinTech Global Summit</button>
+      <section class="logo">
+        <div class="logo__container">
+          <h3 class="logo__h3">FinTech Global Summit Logo</h3>
+          <div class="logo__decoration"></div>
+          <p class="logo__p">The logo of FinTech Global Summit 2022 was decided thought the logo competition from 8.June to 7.July.</p>
+          <img class="logo__img" src="../img/fintech-logo-1.svg" alt="">
         </div>
-      </section> -->
+      </section>
 
-      <!-- Feature Speakers -->
+      <!-- Past Events -->
 
-      <!-- <section class="speakers">
-        <div class="speakers__container">
-          <h3 class="speakers__h2">Feature Speakers</h3>
-          <span class="speakers__decoration"></span>
-          <ul class="speakers__list">
-            
-          </ul>
-          <button class="speakers__btn" type="button">MORE<span class=" speakers__icon fas fa-chevron-down"></span></button>
+      <section class="past-event">
+        <div class="past-event__container">
+          <h3 class="past-event__h3">See the past FinTech Global Summit</h3>
+          <span class="past-event__decoration"></span>
+          <p class="past-event__p">Take a look at the last two FinTech which took place in Buenos Aires and Berlin.</p>
+          <div class="past-event__img-container">
+            <img class="past-event__img" src="../img/duotone-img1.png" alt="">
+            <img class="past-event__img" src="../img/duotone-img2.png" alt="">
+          </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- Partners -->
 
       <section class="partners">
         <div class="partners__container">
-          <h3 class="partners__h2">Partners </h3>
+          <h2 class="partners__h2">Partners</h2>
           <span class="partners__decoration"></span>
           <div class="partners__logos">
-            <img class="partners__img" src="img/blackrock.svg" alt="">
-            <img class="partners__img" src="img/vanguard.svg" alt="">
-            <img class="partners__img" src="img/ubs.svg" alt="">
-            <img class="partners__img" src="img/fidelity.svg" alt="">
-            <img class="partners__img" src="img/allianz.svg" alt="">
+            <img class="partners__img" src="../img/blackrock.svg" alt="">
+            <img class="partners__img" src="../img/vanguard.svg" alt="">
+            <img class="partners__img" src="../img/ubs.svg" alt="">
+            <img class="partners__img" src="../img/fidelity.svg" alt="">
+            <img class="partners__img" src="../img/allianz.svg" alt="">
           </div>
       </section>
     </main>
 
     <!-- Footer -->
 
-    <footer>
+    <footer class="footer">
       <div class="footer__container">
-      <img class="footer__img" src="img/fintech-logo.svg" alt="">
+      <img class="footer__img" src="../img/fintech-logo-1.svg" alt="">
+      <img class="footer__img--secondary" src="../img/fintech-logo-3.svg" alt="">
       <p class="footer__p">2021 FinTech Global Summit<br>Some Rights Reserved</p>
       </div>
     </footer>
