@@ -1,8 +1,8 @@
-// Nav
+// Navbar mobile
 
-const openIcon = document.querySelectorAll('.nav__icon--open');
-const closeIcon = document.querySelectorAll('.nav__icon-close');
-const mobileMenu = document.querySelectorAll('.nav__mobile-menu');
+const openIcon = document.querySelector('.nav__icon--open');
+const closeIcon = document.querySelector('.nav__icon-close');
+const mobileMenu = document.querySelector('.nav__mobile-menu');
 const menuLinks = document.querySelectorAll('.nav__mobile');
 
 closeIcon.addEventListener('click', () => {
@@ -19,9 +19,8 @@ menuLinks.forEach((el) => {
   });
 });
 
-//
+// Mobile nav scrolling
 
-// const navsDesktop = document.querySelectorAll('.top-nav, .nav-bottom');
 const scrolling = document.querySelector('.nav');
 
 window.addEventListener('scroll', () => {
@@ -30,4 +29,3 @@ window.addEventListener('scroll', () => {
 });
 
 //
-
