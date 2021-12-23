@@ -98,7 +98,8 @@ body {
     align-items: center;
     margin-right: 5rem;
     margin-left: 1rem;
-    gap: clamp(0.5rem, 2vw, 2rem);
+    gap: 1rem;
+    /* gap: clamp(0.5rem, 2vw, 2rem); */ /* Weird linter error */
   }
 
   .nav-bottom__a {

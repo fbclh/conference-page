@@ -145,7 +145,11 @@ body {
     align-items: center;
     margin-right: 5rem;
     margin-left: 1rem;
-    gap: clamp(0.5rem, 2vw, 2rem);
+    gap: 1rem;
+
+    /* gap: clamp(0.5rem, 2vw, 2rem); */
+
+    /* Weird linter error */
   }
 
   .nav-bottom__a {
@@ -239,7 +243,6 @@ body {
   .hero__h4 {
     margin-top: 0;
     margin-bottom: 0;
-
     color: #ee523c;
     font-size: 1.5rem;
     font-weight: normal;
@@ -309,7 +312,7 @@ body {
 }
 
 .program__cards {
-  margin-top: 0rem;
+  margin-top: 0;
   margin-bottom: 0.5rem;
   padding: 0;
 }
@@ -478,15 +481,12 @@ body {
 }
 
 .speakers__list {
-  list-style: none;
-}
-
-.speakers__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-right: 4.75rem;
   margin-left: 4.75rem;
   padding-left: 0;
+  list-style: none;
 }
 
 .speakers__img {
@@ -518,12 +518,12 @@ body {
   font-size: small;
 }
 
-.title-decoration {
+.speakers__decoration {
   display: block;
   height: 0.2rem;
 }
 
-.title-decoration--small {
+.speakers__decoration--small {
   width: 1.5rem;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -536,9 +536,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-
-  .speakers__list {
     margin-right: 3rem;
     margin-left: 3rem;
     padding-left: 0;

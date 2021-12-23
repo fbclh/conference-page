@@ -89,7 +89,7 @@ const appendSpeakers = () => {
           <h3 class="speakers__name">${speakers[i].name}</h3>
           <h4 class="speakers__role">${speakers[i].role}</h4>
         </hgroup>
-        <span class="title-decoration title-decoration--small"></span>
+        <span class="speakers__decoration speakers__decoration--small"></span>
         <p class="speakers__description">${speakers[i].description}</p>
       </div>`;
     li.classList.add('speakers__card');
