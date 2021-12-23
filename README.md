@@ -1,25 +1,27 @@
 # Capstone Project
 
-<!-- > Portfolio project, the goal is to start working on it from the beginning of the Microverse program and precisely replicate one of the portfolio templates provided. -->
+> Capstone project, the project is based on an online website for a conference designed by [Cindy Shin](https://www.behance.net/adagio07) where we followed the design guidelines but the content has been personalized.
 
-![screenshot](img/...)
+![screenshot](
+  img/capstone-img.png)
 
 ## Built With
 
-<!-- - Languages: HTML, CSS and JS
+- Languages: HTML, CSS and JS
 - Frameworks: None
-- Technologies: Git, GitHub, VSCode, BEM, PostCSS and Figma. -->
+- Technologies: Git, GitHub, VSCode, BEM, PostCSS and Figma.
 
 ## Live Demo
 
-[www](http://www/)
+[fbclh.github.io/capstone-one](https://fbclh.github.io/capstone-one/)
 
 ## Getting Started
 
-<!-- To get a local copy up and running follow there simple steps:
+To get a local copy up and running follow there simple steps:
 
-- You can clone this repo by typing `git clone` git@github.com:fbclh/portfolio-microverse.git on you terminal.
-- Type `cd` portfolio-microverse to access the project on the terminal -->
+- Run `git clone git@github.com:fbclh/capstone-one.git`
+
+- Run `cd` capstone-one to access the project on the terminal
 
 ## Authors
 
@@ -38,9 +40,7 @@ Give a star if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Credits and original design by [Cindy Shin](https://www.behance.net/adagio07) in Behance.
 
 ## License
 
