@@ -25,55 +25,53 @@ const scrolling = document.querySelector('.nav');
 
 window.addEventListener('scroll', () => {
   scrolling.style.backgroundColor = '#25282f';
-  openIcon.style.color = 'white';
+  openIcon.style.color = '#f0f0f0';
 });
-
-//
 
 // Dynamic JS page
 
 const speakers = [
   {
     name: 'Adam Smith',
-    role: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, animi.',
+    role: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, animi.',
-    imgSrc: '',
+      'Sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt. Morbi tincidunt augue interdum velit euismod in. ',
+    imgSrc: 'img/person1.png',
   },
   {
-    name: 'Adam Smith',
-    role: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, animi.',
+    name: 'Mateo Bernasconi',
+    role: 'Consectetur adipisicing elit.',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, animi.',
-    imgSrc: '',
+      'Ut lectus arcu bibendum at varius vel. Nulla aliquet enim tortor at. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Morbi enim nunc faucibus a pellentesque sit amet porttitor. ',
+    imgSrc: 'img/person2.png',
   },
   {
-    name: 'Adam Smith',
-    role: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, animi.',
+    name: 'Kelly Fischer',
+    role: 'Dolor sit amet consectetur adipisicing elit.',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, animi.',
-    imgSrc: '',
+      'Vel eros donec ac odio. Libero nunc consequat interdum varius sit amet mattis. Tincidunt dui ut ornare lectus sit amet est placerat. Lorem dolor sed viverra ipsum nunc.',
+    imgSrc: 'img/person3.png',
   },
   {
-    name: 'Adam Smith',
-    role: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, animi.',
+    name: 'Kevin Koch',
+    role: 'Sit amet consectetur adipisicing.',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, animi.',
-    imgSrc: '',
+      'Sagittis vitae et leo duis ut diam quam. Augue lacus viverra vitae congue eu. Netus et malesuada fames ac. Laoreet non curabitur gravida arcu.',
+    imgSrc: 'img/person4.png',
   },
   {
-    name: 'Adam Smith',
-    role: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, animi.',
+    name: 'Thomas Muller',
+    role: 'Ipsum dolor sit amet consectetur.',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, animi.',
-    imgSrc: '',
+      'Pulvinar proin gravida hendrerit lectus. Ultricies leo integer malesuada nunc vel. Urna molestie at elementum eu facilisis sed odio morbi. Sodales ut etiam sit amet nisl purus.',
+    imgSrc: 'img/person5.png',
   },
   {
-    name: 'Adam Smith',
-    role: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, animi.',
+    name: 'Karl Fitzpatrick',
+    role: 'Officia, animi adipisicing elit.',
     description:
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, animi.',
-    imgSrc: '',
+      'Id volutpat lacus laoreet non. Nibh nisl condimentum id venenatis a. Magna ac placerat vestibulum lectus mauris ultrices eros in cursus. Risus in hendrerit gravida rutrum quisque non tellus orci ac.',
+    imgSrc: 'img/person6.png',
   },
 ];
 
