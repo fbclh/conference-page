@@ -19,7 +19,7 @@ menuLinks.forEach((el) => {
   });
 });
 
-// Mobile menu (nav scrolling)
+// Mobile menu [nav scrolling]
 
 const scrolling = document.querySelector('.nav');
 

@@ -17,11 +17,7 @@
 
 ## Getting Started
 
-To get a local copy up and running follow there simple steps:
-
-- Run `git clone git@github.com:fbclh/capstone-one.git`
-
-- Run `cd` capstone-one to access the project on the terminal
+- Open the terminal and run: `git clone git@github.com:fbclh/capstone-one.git`
 
 ## Authors
 
