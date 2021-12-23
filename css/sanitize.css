@@ -5,9 +5,9 @@
 
  * sanitize.css wraps styles in zero-specificity selectors using :where().
 
- * sanitize.css and normalize.css correct browser bugs while carefully testing and documenting changes. 
- 
- * sanitize.css styles adhere to common developer expectations and preferences, normalize.css styles adhere to css specifications. 
+ * sanitize.css and normalize.css correct browser bugs while carefully testing and documenting changes.
+
+ * sanitize.css styles adhere to common developer expectations and preferences, normalize.css styles adhere to css specifications.
  */
 
 /* Document
@@ -53,6 +53,19 @@ html {
   -ms-text-size-adjust: 100%; /* 5 */
   -webkit-text-size-adjust: 100%; /* 5 */
   word-break: break-word; /* 6 */
+  font-family:
+    system-ui,
+    /* macOS 10.11-10.12 */ -apple-system,
+    /* Windows 6+ */ Segoe UI,
+    /* Android 4+ */ Roboto,
+    /* Ubuntu 10.10+ */ Ubuntu,
+    /* Gnome 3+ */ Cantarell,
+    /* KDE Plasma 5+ */ Noto Sans,
+    /* fallback */ sans-serif,
+    /* macOS emoji */ "Apple Color Emoji",
+    /* Windows emoji */ "Segoe UI Emoji",
+    /* Windows emoji */ "Segoe UI Symbol",
+    /* Linux emoji */ "Noto Color Emoji";
 }
 
 /* Sections
@@ -136,7 +149,7 @@ nav ul {
  */
 
 pre {
-  font-family: monospace, monospace; /* 1 */
+  font-family: monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
@@ -177,7 +190,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace; /* 1 */
+  font-family: monospace; /* 1 */
   font-size: 1em; /* 2 */
 }
 
@@ -344,9 +357,9 @@ progress {
  * Remove the inheritance of text transform in Firefox.
  */
 
-select {
+/* select {
   text-transform: none;
-}
+} */
 
 /**
  * 1. Remove the margin in Firefox and Safari.
@@ -460,9 +473,12 @@ dialog {
   border: solid;
   color: black;
   display: block;
-  height: -moz-fit-content;
-  height: -webkit-fit-content;
-  height: fit-content;
+
+  /* height: -moz-fit-content; */
+
+  /* height: -webkit-fit-content; */
+
+  /* height: fit-content; */
   left: 0;
   margin: auto;
   padding: 1em;
@@ -584,7 +600,10 @@ textarea,
  * Form controls appear visually consistent and restyle consistently (opinionated).
  */
 
-button, input, select, textarea {
+button,
+input,
+select,
+textarea {
   background-color: transparent;
   border: 1px solid WindowFrame;
   color: inherit;
@@ -637,7 +656,7 @@ select:not([multiple]):not([size]) {
 iframe,
 img,
 input,
-select,
+/* select, stylelint fix */
 textarea {
   height: auto;
   max-width: 100%;
@@ -650,32 +669,21 @@ textarea {
  * Typography uses the default system font (opinionated).
  */
 
-html {
-  font-family:
-    system-ui,
-    /* macOS 10.11-10.12 */ -apple-system,
-    /* Windows 6+ */ Segoe UI,
-    /* Android 4+ */ Roboto,
-    /* Ubuntu 10.10+ */ Ubuntu,
-    /* Gnome 3+ */ Cantarell,
-    /* KDE Plasma 5+ */ Noto Sans,
-    /* fallback */ sans-serif,
-    /* macOS emoji */ "Apple Color Emoji",
-    /* Windows emoji */ "Segoe UI Emoji",
-    /* Windows emoji */ "Segoe UI Symbol",
-    /* Linux emoji */ "Noto Color Emoji";
-}
+/* html {} stylelint fix */
 
 /**
  * Pre-formatted and code-formatted text uses the monospace system font (opinionated).
  */
 
-code, kbd, pre, samp {
+code,
+kbd,
+pre,
+samp {
   font-family:
     /* macOS 10.10+ */ Menlo,
     /* Windows 6+ */ Consolas,
     /* Android 4+ */ Roboto Mono,
-    /* Ubuntu 10.10+ */ Ubuntu Monospace,
+    /* Ubuntu 10.10+ */ Ubuntu monospace,
     /* KDE Plasma 5+ */ Noto Mono,
     /* KDE Plasma 4+ */ Oxygen Mono,
     /* Linux/OpenOffice fallback */ Liberation Mono,
