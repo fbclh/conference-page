@@ -27,14 +27,10 @@ body {
 */
 
 .nav {
-  z-index: 3;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.15);
 }
 
-.nav__btn {
+.nav__btn-icon {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
   margin-left: 1rem;
@@ -43,8 +39,6 @@ body {
   background: none;
   cursor: pointer;
 }
-
-/* Navigation mobile */
 
 .nav__mobile-menu {
   display: flex;
@@ -87,19 +81,18 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .nav__ul,
   .nav-top,
-  .nav-bottom__container {
+  .nav__container {
     display: none;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .nav {
+  .nav__mobile-menu {
     display: none;
   }
 
-  .nav__btn {
+  .nav__btn-icon {
     display: none;
   }
 
@@ -124,14 +117,14 @@ body {
     text-decoration: none;
   }
 
-  .nav-bottom__container {
+  .nav__container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.15);
   }
 
-  .nav-bottom__logo {
+  .nav__logo {
     width: auto;
     height: 30px;
     margin-top: 1rem;
@@ -140,23 +133,21 @@ body {
     margin-left: 5rem;
   }
 
-  .nav-bottom__ul {
+  .nav__ul {
     display: flex;
     align-items: center;
     margin-right: 5rem;
     margin-left: 1rem;
     gap: 1rem;
-
-    /* gap: clamp(0.5rem, 2vw, 2rem); Weird linter error */
   }
 
-  .nav-bottom__a {
+  .nav__a {
     color: #3b3e45;
     text-decoration: none;
     white-space: nowrap;
   }
 
-  .nav-bottom__btn {
+  .nav__btn {
     padding: 0.25rem 1.5rem;
     border: 4px solid #ee523c;
     color: #ee523c;

@@ -31,19 +31,6 @@
   </head>
   <body>
     <header>
-      <!-- Navigation Mobile -->
-
-      <nav class="nav">
-        <button class="nav__btn" type="button">
-          <i class="nav__icon--open fas fa-bars"></i>
-        </button>
-        <ul class="nav__ul">
-          <li class="nav__li"><a class="nav__a" href=""></a></li>
-          <li class="nav__li"><a class="nav__a" href=""></a></li>
-          <li class="nav__li"><a class="nav__a" href=""></a></li>
-        </ul>
-      </nav>
-
       <!-- Navigation mobile -->
 
       <nav class="nav__mobile-menu">
@@ -72,7 +59,7 @@
         </ul>
       </nav>
 
-      <!-- Navigation desktop -->
+      <!-- Navigation desktop top -->
 
       <nav class="nav-top">
         <ul class="nav-top__ul">
@@ -87,33 +74,42 @@
           <li><a class="nav-top__a" href="">Logout</a></li>
         </ul>
       </nav>
-      <nav class="nav-bottom">
-        <div class="nav-bottom__container">
-          <a href="/"
-            ><img class="nav-bottom__logo" src="img/fintech-logo-1.svg" alt=""
+
+      <!-- Navigation desktop bottom -->
+
+      <nav class="nav">
+        <div class="nav__container">
+          <a href="./index.html"
+            ><img
+              class="nav__logo"
+              src="img/fintech-logo-1.svg"
+              alt="FinTech logo"
           /></a>
-          <ul class="nav-bottom__ul">
+          <ul class="nav__ul">
             <li>
-              <a class="nav-bottom__a" href="../pages/about.html">About</a>
+              <a class="nav__a" href="pages/about.html">About</a>
             </li>
-            <li><a class="nav-bottom__a" href="">Program</a></li>
-            <li><a class="nav-bottom__a" href="">Join</a></li>
-            <li><a class="nav-bottom__a" href="">Sponsor</a></li>
-            <li><a class="nav-bottom__a" href="">News</a></li>
+            <li><a class="nav__a" href="">Program</a></li>
+            <li><a class="nav__a" href="">Join</a></li>
+            <li><a class="nav__a" href="">Sponsor</a></li>
+            <li><a class="nav__a" href="">News</a></li>
             <li>
-              <button class="nav-bottom__btn" type="button">Campaign</button>
+              <button class="nav__btn" type="button">Campaign</button>
             </li>
           </ul>
         </div>
+        <button class="nav__btn-icon" type="button">
+          <i class="nav__icon--open fas fa-bars"></i>
+        </button>
       </nav>
     </header>
 
     <main>
       <!-- Hero -->
 
-      <section class="hero hero--img hero--test">
+      <section class="hero hero--img">
         <div class="hero__container">
-          <div class="hero__container-img test"></div>
+          <div class="hero__container-img"></div>
           <hgroup class="hero__hgroup">
             <h3 class="hero__h4">"Hello! FinTech world"</h3>
             <h1 class="hero__h1">
@@ -144,7 +140,11 @@
         <div class="program__container">
           <ul class="program__cards">
             <li class="program__item">
-              <img class="program__img" src="img/icon-4.png" alt="" />
+              <img
+                class="program__img"
+                src="img/icon-4.png"
+                alt="Icon about the program"
+              />
               <h4 class="program__h4 program__h4--1">Lecture</h4>
               <p class="program__p">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -155,7 +155,11 @@
 
           <ul class="program__cards">
             <li class="program__item">
-              <img class="program__img" src="img/icon-1.png" alt="" />
+              <img
+                class="program__img"
+                src="img/icon-1.png"
+                alt="Icon about the program"
+              />
               <h4 class="program__h4">Exihibitions</h4>
               <p class="program__p">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -166,7 +170,11 @@
 
           <ul class="program__cards">
             <li class="program__item">
-              <img class="program__img" src="img/icon-2.png" alt="" />
+              <img
+                class="program__img"
+                src="img/icon-2.png"
+                alt="Icon about the program"
+              />
               <h4 class="program__h4">Forum</h4>
               <p class="program__p">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -177,7 +185,11 @@
 
           <ul class="program__cards">
             <li class="program__item">
-              <img class="program__img" src="img/icon-5.png" alt="" />
+              <img
+                class="program__img"
+                src="img/icon-5.png"
+                alt="Icon about the program"
+              />
               <h4 class="program__h4">Workshop</h4>
               <p class="program__p">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -188,7 +200,11 @@
 
           <ul class="program__cards">
             <li class="program__item">
-              <img class="program__img" src="img/icon-3.png" alt="" />
+              <img
+                class="program__img"
+                src="img/icon-3.png"
+                alt="Icon about the program"
+              />
               <h4 class="program__h4">Ignite</h4>
               <p class="program__p">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse
@@ -227,11 +243,27 @@
           <h2 class="partners__h2">Partners</h2>
           <span class="partners__decoration"></span>
           <div class="partners__logos">
-            <img class="partners__img" src="img/blackrock.svg" alt="" />
-            <img class="partners__img" src="img/vanguard.svg" alt="" />
-            <img class="partners__img" src="img/ubs.svg" alt="" />
-            <img class="partners__img" src="img/fidelity.svg" alt="" />
-            <img class="partners__img" src="img/allianz.svg" alt="" />
+            <img
+              class="partners__img"
+              src="img/blackrock.svg"
+              alt="Blackrock logo"
+            />
+            <img
+              class="partners__img"
+              src="img/vanguard.svg"
+              alt="Vanguard logo"
+            />
+            <img class="partners__img" src="img/ubs.svg" alt="Ubs logo" />
+            <img
+              class="partners__img"
+              src="img/fidelity.svg"
+              alt="Fidelity logo"
+            />
+            <img
+              class="partners__img"
+              src="img/allianz.svg"
+              alt="Allianz logo"
+            />
           </div>
         </div>
       </section>
@@ -241,7 +273,11 @@
 
     <footer>
       <div class="footer__container">
-        <img class="footer__img" src="img/fintech-logo-1.svg" alt="" />
+        <img
+          class="footer__img"
+          src="img/fintech-logo-1.svg"
+          alt="FinTech Summit logo"
+        />
         <p class="footer__p">
           2021 FinTech Global Summit<br />Some Rights Reserved
         </p>

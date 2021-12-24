@@ -27,24 +27,42 @@
     ></script>
 
     <!-- Script -->
-    <script src="index.js" defer></script>
+    <script src="../index.js" defer></script>
   </head>
   <body>
     <header>
-      <!-- Navigation Mobile -->
+      <!-- Navigation mobile -->
 
-      <nav class="nav">
-        <button class="nav__btn" type="button">
-          <i class="nav__icon--open fas fa-bars"></i>
+      <nav class="nav__mobile-menu">
+        <button class="nav__btn-mobile" type="button">
+          <i class="nav__icon-close fas fa-times"></i>
         </button>
-        <ul class="nav__ul">
-          <li class="nav__li"><a class="nav__a" href=""></a></li>
-          <li class="nav__li"><a class="nav__a" href=""></a></li>
-          <li class="nav__li"><a class="nav__a" href=""></a></li>
+        <ul class="nav__mobile">
+          <li class="nav__mobile-list">
+            <a class="nav__mobile-links" href="../index.html">Home</a>
+          </li>
+          <li class="nav__mobile-list">
+            <a class="nav__mobile-links" href="../pages/about.html">About</a>
+          </li>
+          <li class="nav__mobile-list">
+            <a class="nav__mobile-links" href="#">Program</a>
+          </li>
+          <li class="nav__mobile-list">
+            <a class="nav__mobile-links" href="#">Join</a>
+          </li>
+          <li class="nav__mobile-list">
+            <a class="nav__mobile-links" href="#">Sponsor</a>
+          </li>
+          <li class="nav__mobile-list">
+            <a class="nav__mobile-links" href="#">News</a>
+          </li>
+          <li class="nav__mobile-list">
+            <a class="nav__mobile-links" href="#">Campaign</a>
+          </li>
         </ul>
       </nav>
 
-      <!-- Navigation desktop -->
+      <!-- Navigation desktop top -->
 
       <nav class="nav-top">
         <ul class="nav-top__ul">
@@ -59,25 +77,33 @@
           <li><a class="nav-top__a" href="">Logout</a></li>
         </ul>
       </nav>
-      <nav class="nav-bottom">
-        <div class="nav-bottom__container">
-          <a href="/"
+
+      <!-- Navigation desktop bottom -->
+
+      <nav class="nav">
+        <div class="nav__container">
+          <a href="../index.html"
             ><img
-              class="nav-bottom__logo"
+              class="nav__logo"
               src="../img/fintech-logo-1.svg"
-              alt=""
+              alt="FinTech logo"
           /></a>
-          <ul class="nav-bottom__ul">
-            <li><a class="nav-bottom__a" href="">About</a></li>
-            <li><a class="nav-bottom__a" href="">Program</a></li>
-            <li><a class="nav-bottom__a" href="">Join</a></li>
-            <li><a class="nav-bottom__a" href="">Sponsor</a></li>
-            <li><a class="nav-bottom__a" href="">News</a></li>
+          <ul class="nav__ul">
             <li>
-              <button class="nav-bottom__btn" type="button">Campaign</button>
+              <a class="nav__a" href="pages/about.html">About</a>
+            </li>
+            <li><a class="nav__a" href="">Program</a></li>
+            <li><a class="nav__a" href="">Join</a></li>
+            <li><a class="nav__a" href="">Sponsor</a></li>
+            <li><a class="nav__a" href="">News</a></li>
+            <li>
+              <button class="nav__btn" type="button">Campaign</button>
             </li>
           </ul>
         </div>
+        <button class="nav__btn-icon" type="button">
+          <i class="nav__icon--open fas fa-bars"></i>
+        </button>
       </nav>
     </header>
 
@@ -126,7 +152,11 @@
             The logo of FinTech Global Summit 2022 was decided thought the logo
             competition from 8.June to 7.July.
           </p>
-          <img class="logo__img" src="../img/fintech-logo-1.svg" alt="" />
+          <img
+            class="logo__img"
+            src="../img/fintech-logo-1.svg"
+            alt="FinTech logo"
+          />
         </div>
       </section>
 
@@ -141,8 +171,16 @@
             and Berlin.
           </p>
           <div class="past-event__img-container">
-            <img class="past-event__img" src="../img/duotone-img1.png" alt="" />
-            <img class="past-event__img" src="../img/duotone-img2.png" alt="" />
+            <img
+              class="past-event__img"
+              src="../img/duotone-img1.png"
+              alt="Past event 2020"
+            />
+            <img
+              class="past-event__img"
+              src="../img/duotone-img2.png"
+              alt="Past event 2021"
+            />
           </div>
         </div>
       </section>
@@ -154,11 +192,27 @@
           <h2 class="partners__h2">Partners</h2>
           <span class="partners__decoration"></span>
           <div class="partners__logos">
-            <img class="partners__img" src="../img/blackrock.svg" alt="" />
-            <img class="partners__img" src="../img/vanguard.svg" alt="" />
-            <img class="partners__img" src="../img/ubs.svg" alt="" />
-            <img class="partners__img" src="../img/fidelity.svg" alt="" />
-            <img class="partners__img" src="../img/allianz.svg" alt="" />
+            <img
+              class="partners__img"
+              src="../img/blackrock.svg"
+              alt="Blackrock logo"
+            />
+            <img
+              class="partners__img"
+              src="../img/vanguard.svg"
+              alt="Vanguard logo"
+            />
+            <img class="partners__img" src="../img/ubs.svg" alt="Ubs logo" />
+            <img
+              class="partners__img"
+              src="../img/fidelity.svg"
+              alt="Fidelity logo"
+            />
+            <img
+              class="partners__img"
+              src="../img/allianz.svg"
+              alt="Allianz logo"
+            />
           </div>
         </div>
       </section>
@@ -168,11 +222,15 @@
 
     <footer class="footer">
       <div class="footer__container">
-        <img class="footer__img" src="../img/fintech-logo-1.svg" alt="" />
+        <img
+          class="footer__img"
+          src="../img/fintech-logo-1.svg"
+          alt="FinTech logo"
+        />
         <img
           class="footer__img--secondary"
           src="../img/fintech-logo-3.svg"
-          alt=""
+          alt="FinTech logo"
         />
         <p class="footer__p">
           2021 FinTech Global Summit<br />Some Rights Reserved

@@ -3,7 +3,6 @@
 const openIcon = document.querySelector('.nav__icon--open');
 const closeIcon = document.querySelector('.nav__icon-close');
 const mobileMenu = document.querySelector('.nav__mobile-menu');
-const menuLinks = document.querySelectorAll('.nav__mobile');
 
 closeIcon.addEventListener('click', () => {
   mobileMenu.style.left = '-100%';
@@ -11,21 +10,6 @@ closeIcon.addEventListener('click', () => {
 
 openIcon.addEventListener('click', () => {
   mobileMenu.style.left = '0';
-});
-
-menuLinks.forEach((el) => {
-  el.addEventListener('click', () => {
-    mobileMenu.style.left = '-100%';
-  });
-});
-
-// Mobile menu [nav scrolling]
-
-const scrolling = document.querySelector('.nav');
-
-window.addEventListener('scroll', () => {
-  scrolling.style.backgroundColor = '#25282f';
-  openIcon.style.color = '#f0f0f0';
 });
 
 // Dynamic JS page
@@ -82,7 +66,7 @@ const appendSpeakers = () => {
     const li = document.createElement('li');
     li.innerHTML = `<div class="speakers__img-container">
         <span class="speakers__decoration-img"></span>
-        <img class="speakers__img" src="${speakers[i].imgSrc}" alt="">
+        <img class="speakers__img" src="${speakers[i].imgSrc}" alt="Speakers image">
       </div>
       <div class="speakers__info">
         <hgroup>
