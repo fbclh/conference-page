@@ -17,7 +17,7 @@
 
 ## Getting Started
 
-- Open the terminal and run: `git clone git@github.com:fbclh/capstone-one.git`
+Open the terminal and run: `git clone git@github.com:fbclh/capstone-one.git`
 
 ## Authors
 
@@ -36,7 +36,7 @@ Give a star if you like this project!
 
 ## Acknowledgments
 
-- Credits and original design by [Cindy Shin](https://www.behance.net/adagio07) in Behance.
+Credits and original design by [Cindy Shin](https://www.behance.net/adagio07) in Behance.
 
 ## License
 
