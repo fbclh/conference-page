@@ -17,12 +17,15 @@ Capstone project, the project is based on an online website for a conference des
 
 ## Getting Started
 
-Run: `git clone git@github.com:fbclh/capstone-one.git`
+Run
+```sh
+   git clone git@github.com:fbclh/capstone-one.git
+```
 
 ## Authors
 
-- GitHub: [@fbclh](https://github.com/fbclh)
-- LinkedIn: [@fbclh](https://www.linkedin.com/in/fbclh)
+- GitHub: [github.com/fbclh](https://github.com/fbclh)
+- LinkedIn: [linkedin.com/in/fbclh](https://www.linkedin.com/in/fbclh)
 
 ## Contributing
 
