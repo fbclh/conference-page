@@ -4,18 +4,6 @@
   ========================================
 */
 
-@font-face {
-  font-family: 'cocogoose';
-  src: url('fonts/cocogoose-webfont.woff');
-  font-weight: 900;
-}
-
-@font-face {
-  font-family: 'cocogoose';
-  src: url('fonts/cocogoose-Italic.ttf');
-  font-style: italic;
-}
-
 body {
   font-family: 'lato', sans-serif;
 }

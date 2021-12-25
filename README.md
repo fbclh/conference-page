@@ -1,6 +1,6 @@
 # Capstone Project
 
-> Capstone project, the project is based on an online website for a conference designed by [Cindy Shin](https://www.behance.net/adagio07) where we followed the design guidelines but the content has been personalized.
+Capstone project, the project is based on an online website for a conference designed by [Cindy Shin](https://www.behance.net/adagio07) where we followed the design guidelines but the content has been personalized.
 
 ![screenshot](
   img/capstone-img.png)
@@ -8,7 +8,7 @@
 ## Built With
 
 - Languages: HTML, CSS and JS
-- Frameworks: None
+<!-- - Frameworks: None -->
 - Technologies: Git, GitHub, VSCode, BEM, PostCSS and Figma.
 
 ## Live Demo
@@ -17,7 +17,7 @@
 
 ## Getting Started
 
-Open the terminal and run: `git clone git@github.com:fbclh/capstone-one.git`
+Run: `git clone git@github.com:fbclh/capstone-one.git`
 
 ## Authors
 
@@ -26,9 +26,7 @@ Open the terminal and run: `git clone git@github.com:fbclh/capstone-one.git`
 
 ## Contributing
 
-Contributions, issues, and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues/).
+Contributions, issues, and feature requests are welcome, feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
