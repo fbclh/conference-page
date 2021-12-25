@@ -8,7 +8,6 @@ Capstone project, the project is based on an online website for a conference des
 ## Built With
 
 - Languages: HTML, CSS and JS
-<!-- - Frameworks: None -->
 - Technologies: Git, GitHub, VSCode, BEM, PostCSS and Figma.
 
 ## Live Demo
@@ -22,7 +21,7 @@ Run
    git clone git@github.com:fbclh/capstone-one.git
 ```
 
-## Authors
+## Author
 
 - GitHub: [github.com/fbclh](https://github.com/fbclh)
 - LinkedIn: [linkedin.com/in/fbclh](https://www.linkedin.com/in/fbclh)
@@ -30,10 +29,6 @@ Run
 ## Contributing
 
 Contributions, issues, and feature requests are welcome, feel free to check the [issues page](../../issues/).
-
-## Show your support
-
-Give a star if you like this project!
 
 ## Acknowledgments
 
