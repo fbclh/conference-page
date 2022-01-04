@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /*
   ========================================
   General
@@ -126,6 +130,7 @@ body {
     align-items: center;
     margin-right: 5rem;
     margin-left: 1rem;
+
     gap: 1rem;
   }
 
@@ -600,4 +605,8 @@ body {
   .footer__container {
     margin: 3rem 5rem;
   }
+}
+
+.test {
+  @apply container px-5 py-24 mx-auto;
 }

@@ -1,16 +1,16 @@
 // Mobile menu
 
-const openIcon = document.querySelector('.nav__icon--open');
-const closeIcon = document.querySelector('.nav__icon-close');
-const mobileMenu = document.querySelector('.nav__mobile-menu');
+const openIcon = document.querySelector('.nav__icon--open')
+const closeIcon = document.querySelector('.nav__icon-close')
+const mobileMenu = document.querySelector('.nav__mobile-menu')
 
 closeIcon.addEventListener('click', () => {
   mobileMenu.style.left = '-100%';
-});
+})
 
 openIcon.addEventListener('click', () => {
   mobileMenu.style.left = '0';
-});
+})
 
 // Dynamic JS page
 
@@ -57,30 +57,37 @@ const speakers = [
       'Id volutpat lacus laoreet non. Nibh nisl condimentum id venenatis a. Magna ac placerat vestibulum lectus mauris ultrices eros in cursus. Risus in hendrerit gravida rutrum quisque non tellus orci ac.',
     imgSrc: 'img/person6.png',
   },
-];
+]
 
-const speakersList = document.querySelector('.speakers__list');
+const speakersList = document.querySelector('.speakers__list')
+
+// We can use for..of to iterate 
+// for (let node of document.body.childNodes) {
+//   alert(node); // shows all nodes from the collection
+// }
 
 const appendSpeakers = () => {
   for (let i = 0; i < speakers.length; i += 1) {
     const li = document.createElement('li');
-    li.innerHTML = `<div class="speakers__img-container">
-        <span class="speakers__decoration-img"></span>
-        <img class="speakers__img" src="${speakers[i].imgSrc}" alt="Speakers image">
-      </div>
-      <div class="speakers__info">
-        <hgroup>
-          <h3 class="speakers__name">${speakers[i].name}</h3>
-          <h4 class="speakers__role">${speakers[i].role}</h4>
-        </hgroup>
-        <span class="speakers__decoration speakers__decoration--small"></span>
-        <p class="speakers__description">${speakers[i].description}</p>
-      </div>`;
+    li.innerHTML = `
+    <div class="speakers__img-container">
+      <span class="speakers__decoration-img"></span>
+      <img class="speakers__img" src="${speakers[i].imgSrc}" alt="Speakers image">
+    </div>
+    <div class="speakers__info">
+      <hgroup>
+        <h3 class="speakers__name">${speakers[i].name}</h3>
+        <h4 class="speakers__role">${speakers[i].role}</h4>
+      </hgroup>
+      <span class="speakers__decoration speakers__decoration--small"></span>
+      <p class="speakers__description">${speakers[i].description}</p>
+    </div>
+`;
     li.classList.add('speakers__card');
     speakersList.appendChild(li);
   }
-};
+}
 
 window.onload = () => {
   appendSpeakers();
-};
+}
