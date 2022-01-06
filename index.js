@@ -1,16 +1,16 @@
 // Mobile menu
 
-const openIcon = document.querySelector('.nav__icon--open')
-const closeIcon = document.querySelector('.nav__icon-close')
-const mobileMenu = document.querySelector('.nav__mobile-menu')
+const openIcon = document.querySelector('.nav__icon--open');
+const closeIcon = document.querySelector('.nav__icon-close');
+const mobileMenu = document.querySelector('.nav__mobile-menu');
 
 closeIcon.addEventListener('click', () => {
   mobileMenu.style.left = '-100%';
-})
+});
 
 openIcon.addEventListener('click', () => {
   mobileMenu.style.left = '0';
-})
+});
 
 // Dynamic JS page
 
@@ -23,8 +23,8 @@ const speakers = [
     imgSrc: 'img/person1.png',
   },
   {
-    name: 'Mateo Bernasconi',
     role: 'Consectetur adipisicing elit.',
+    name: 'Mateo Bernasconi',
     description:
       'Ut lectus arcu bibendum at varius vel. Nulla aliquet enim tortor at. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Morbi enim nunc faucibus a pellentesque sit amet porttitor. ',
     imgSrc: 'img/person2.png',
@@ -57,11 +57,11 @@ const speakers = [
       'Id volutpat lacus laoreet non. Nibh nisl condimentum id venenatis a. Magna ac placerat vestibulum lectus mauris ultrices eros in cursus. Risus in hendrerit gravida rutrum quisque non tellus orci ac.',
     imgSrc: 'img/person6.png',
   },
-]
+];
 
-const speakersList = document.querySelector('.speakers__list')
+const speakersList = document.querySelector('.speakers__list');
 
-// We can use for..of to iterate 
+// We can use for..of to iterate
 // for (let node of document.body.childNodes) {
 //   alert(node); // shows all nodes from the collection
 // }
@@ -86,8 +86,8 @@ const appendSpeakers = () => {
     li.classList.add('speakers__card');
     speakersList.appendChild(li);
   }
-}
+};
 
 window.onload = () => {
   appendSpeakers();
-}
+};
