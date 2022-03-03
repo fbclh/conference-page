@@ -18,8 +18,9 @@
 
 ## Authors
 
-- GitHub: [@fbclh](https://github.com/fbclh)
-- LinkedIn: [@fbclh](https://www.linkedin.com/in/fbclh)
+- GitHub: [github.com/fbclh](https://github.com/fbclh)
+- LinkedIn: [linkedin.com/in/fbclh](https://www.linkedin.com/in/fbclh)
+
 
 ## Acknowledgments
 
