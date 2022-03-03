@@ -13,7 +13,7 @@
 
 ## Live Demo
 
-[fbclh.github.io/capstone-one](https://fbclh.github.io/capstone-one/)
+[fbclh.github.io/conference-page](https://fbclh.github.io/conference-page/)
 
 ## Getting Started
 
