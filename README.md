@@ -15,9 +15,6 @@
 
 [fbclh.github.io/conference-page](https://fbclh.github.io/conference-page/)
 
-## Getting Started
-
-- Open the terminal and run: `git clone git@github.com:fbclh/capstone-one.git`
 
 ## Authors
 
